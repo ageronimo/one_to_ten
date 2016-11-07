@@ -32,7 +32,7 @@ if (age <= 18){
 
 // "(jake) is our lovable hero, who (has seen a few battles) with his trusty (sword)." 
 // "(hero) is our lovable hero, who (something) with (pronoun) trusty (weapon)."
-console.log(hero + " is our lovable hero, who " + xp + " with " + pronoun + " trusty " + weapon + ".")
+console.log(hero + " is our lovable hero, who " + xp + " with " + pronoun + " trusty " + weapon + ".");
 
 
 
@@ -51,9 +51,9 @@ animalHouse(2,3);
 
 // if animal count is greater than 2, console log blah blah
 if (count > 2){
-  console.log("We have too many " + animal + "s.")
+  console.log("We have too many " + animal + "s.");
 } else {
-  console.log("Welcome to the club.")
+  console.log("Welcome to the club.");
 } 
 
 
@@ -66,11 +66,11 @@ function avengersAssemble(avenger){
   if (avenger == "Iron Man"){
     console.log(avenger + " soars through the sky.");
   } else if (avenger == "Captain America"){
-    console.log(avenger + " throws his shield gracefully.")
+    console.log(avenger + " throws his shield gracefully.");
   } else if (avenger == "Black Widow"){
-    console.log(avenger + " kicks the villains' butts in style.")
+    console.log(avenger + " kicks the villains' butts in style.");
   } else{
-    console.log("Sorry, you are not needed for this mission.")
+    console.log("Sorry " + hero + ", you are not needed for this mission.");
   }
 }
 
@@ -82,9 +82,9 @@ avengersAssemble(hero);
 var lights = true;
 
 if (lights == true){
-  console.log("And then there was light.")
+  console.log("And then there was light.");
 } else{
-  console.log("Lights out!")
+  console.log("Lights out!");
 }
 
 
@@ -93,3 +93,15 @@ if (lights == true){
 var carType = ["Toyota","Lamborghini","Tesla"];
 var color = ["red", "blue", "black"];
 var num = 3;
+
+// check for blue toyata, red lamb, black tesla, console log "We have [variables]" for each. 
+// if none are true console log "We don't have any blue Toyotas in stock"
+if (carType == "Toyota" && color == "blue"){
+  console.log("We have " + color[1] + carType[0] + "s.");
+} else if (carType == "Lamborghini" && color == "red"){
+  console.log("We have " + color[0] + carType[1] + "s.");
+} else if (carType == "Tesla" && color == "black"){
+  console.log("We have " + color[2] + carType[2] + "s.");
+} else {
+  console.log("We don't have any blue Toyotas in stock.");
+}
