@@ -90,18 +90,18 @@ if (lights == true){
 
 
 //Exercise 5
-var carType = ["Toyota","Lamborghini","Tesla"];
-var color = ["red", "blue", "black"];
+var carType = "Lamborghini";
+var color = "black";
 var num = 3;
 
 // check for blue toyata, red lamb, black tesla, console log "We have [variables]" for each. 
 // if none are true console log "We don't have any blue Toyotas in stock"
 if (carType == "Toyota" && color == "blue"){
-  console.log("We have " + color[1] + carType[0] + "s.");
+  console.log("We have " + color + carType + "s.");
 } else if (carType == "Lamborghini" && color == "red"){
-  console.log("We have " + color[0] + carType[1] + "s.");
+  console.log("We have " + color + carType + "s.");
 } else if (carType == "Tesla" && color == "black"){
-  console.log("We have " + color[2] + carType[2] + "s.");
+  console.log("We have " + color + carType + "s.");
 } else {
   console.log("We don't have any blue Toyotas in stock.");
 }
